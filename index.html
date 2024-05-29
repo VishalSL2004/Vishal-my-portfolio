@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <!-- header section and nav bars -->
+    <header>
+        <div class="head-sec">
+            <div class="logo">
+                <a href="#"><span id="primary">VI</span>SHAL</a>
+            </div>
+            
+               <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+               </ul>
+        </div>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </header>
+    <!-- home page section -->
+    <div class="body-section" id="home">
+        <div class="details">
+            <h3>HI</h3>
+            <h2>I'm <span id="blackss">VISHAL</span></h2>
+            <h2>A Frontend Developer</h2>
+            <p>To leverage my passion for user-centric design and expertise in frontend development to create intuitive and visually stunning web experiences. I aim to contribute innovative solutions to enhance user engagement, drive business objectives, and stay at the forefront of emerging technologies in the dynamic field of web development.</p>
+            <a href="#contact"><button id="black">Hire Me</button></a>
+            <button id="primarybtn" class="btninsta">Instagram</button>
+        </div>
+        <div class="myimage">
+            <img src="vishal.jpg" alt="my photo" width="350" height="380">
+        </div>
+    </div>
+
+    <!-- about me section -->
+    <div class="about-section" id="about">
+        <div class="about-image">
+            <img src="vishal.jpg" alt="vishal" width="350" height="380">
+        </div>
+        <div class="about-content">
+        <h2>ABOUT <span id="primary">ME</span></h2>
+        <h1>Frontend <span id="primary"> Developer</span></h1>
+        <p>As a recent graduate in computer applications, my career objective is to leverage my technical skills and knowledge to contribute effectively to a dynamic organization. I aim to apply my expertise in software development, database management, and system analysis to create innovative solutions that address real-world challenges. I am eager to collaborate with talented teams, continuously learn and adapt to emerging technologies, and strive for excellence in every project I undertake.</p>
+        <button id="primarybtn">Instagram</button>
+        </div>
+    </div>
+
+   
+<!-- EDUCATION SECTION -->
+
+<div class="edu-sec" id="education">
+    <div class="college">
+        <span id="primary"><h1>BCA</h1></span><br>
+        <h2>New Prince Shri Bhavani Arts and Science college</h2>
+        <h2>Medavakkam</h2>
+        <h3>Percentage - <span id="primary">80%</span></h3>
+    </div>
+    <div class="hsc">
+        <span id="primary"><H1>12<sup>th</sup> (HSC)</H1></span><br>
+        <h2>ST.Patrick's Academy Matriculation Higher Secondary School</h2>
+        <h2>Dindigul</h2>
+        <h3>percentage - <span id="primary">86.6%</span>
+        </h3>
+    </div>
+    <div class="sslc">
+        <span id="primary"><h1>10 <sup>th</sup>(SSLC)</h1></span><br>
+        <h2>ST.Patrick's Academy Matriculation Higher Secondary School</h2>
+        <h2>Dindigul</h2>
+        <h3>percentage - <span id="primary">77.6%</span></h3>
+    </div>
+</div>
+
+<!-- contact section -->
+<div class="con-sec">
+    <div class="contact" id="contact">
+        <div class="title-con">
+            <h1><span id="primary">Co</span>ntact</h1>
+        </div>
+            <div class="con-details">
+                <label id="primary">NAME : VISHAL</label>
+            <LABEL>EMAIL : vishalbca0203@gmail.com</LABEL>
+            <label id="primary">PHONE: 8072935248</label>
+            <label>LOCATION : CHENNAI</label>
+            </div>
+            <a href="#home"><button id="con-btn">HOME</button></a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- script section -->
+<script>
+const menu=document.querySelector('.menu')
+const menuList=document.querySelector('header ul')
+menu.addEventListener('click',()=>{
+            menuList.classList.toggle('showmenu')
+        });
+const btninsta=document.querySelector('.btninsta');
+btninsta.addEventListener('click',()=>{
+    alert('instagram id: vishal_love_dft');
+})
+</script>
+</body>
+</html>

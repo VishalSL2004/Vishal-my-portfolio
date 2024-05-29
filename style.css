@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+#black{
+    color: var(--color--black);
+}
+#blackss{
+    color: black;
+}
+:root{
+    --color--primary:orangered;
+    /* rgb(255, 68, 0) */
+    --color--white:white;
+    --color--black:black;
+    --linear--gradient:linear-gradient(to right blue,red);
+    --color--sandal:rgb(246, 211, 180);
+}
+
+/* HEADER SECTION STYLING */
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+.head-sec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: var(--color--white);
+    width: 100vw;
+    padding: 15px;
+    scroll-behavior: smooth;
+    
+}
+.logo a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--color--white);
+    padding: 8px 10px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid var(--color--primary);
+}
+#primary{
+    color: var(--color--primary) !important;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+ul li {
+list-style: none;
+padding: 10px 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: var(--color--white);
+    transition: all 0.2s ease ;
+    
+}
+.head-btn button{
+    padding: 5px;
+    color: white;
+    background-color: var(--color--primary);
+    border: none;
+    border-radius: 50px 0px 50px 50px;
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: white;
+    margin-bottom: 3px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+/* HEADSECTION HOVERINGS */
+
+ul li a:hover{
+    color: var(--color--primary);
+    border-bottom: 2px solid var(--color--primary);
+    padding-bottom: 5px;
+}
+.logo a:hover{
+    border: 2px solid var(--color--primary);
+    border-radius: 50px 50px 50px 0;
+    
+}
+.head-btn button:hover{
+    opacity: 0.8;
+}
+
+/* home section styling */
+.body-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right,red,blue);
+    /* background-color: var(--color--sandal); */
+    color: var(--color--white);
+    flex-wrap: wrap;
+    
+}
+.body-section h2,h3,p{
+    padding: 5px;
+}
+.body-section p{
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.body-section button{
+    width: 100px;
+    height: 40px;
+}
+.details{
+    padding: 20px;
+    width: 50%;
+}
+.myimage{
+    margin-right:20px;
+}
+.myimage img{
+    margin-top: 20px;
+    border: transparent;
+    padding: 0px 0px 3px 0px;
+    border-radius:50%;
+    box-shadow: 1px 4px 30px 10px var(--color--primary);
+    filter: brightness(1.1);
+    transition: all 0.5s linear 0.1s; 
+}
+.myimage img:hover{
+    transform:scale(1.2);
+    box-shadow: 1px 4px 30px 10px var(--color--black);  
+}
+.body-section #black{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.body-section #primarybtn{
+    background-color: var(--color--primary);
+    color: var(--color--white);
+    border: none;
+    border-radius: 4px;
+}
+.body-section #black:hover,#primarybtn:hover{
+    opacity: 0.8;
+}
+
+/* about me section styling */
+
+.about-section{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: var(--color--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.about-content{
+    padding: 20px;
+    width: 50%;
+}
+.about-content h1,h2{
+    padding: 5px;
+}
+.about-content p{
+    text-align: justify;
+
+}
+.about-image img{
+    margin-top: 20px;
+    border: transparent;
+    padding: 0px 0px 3px 0px;
+    border-radius:50%;
+    box-shadow: 1px 4px 30px 10px var(--color--primary);
+    filter: brightness(1.1);
+    transition: all 0.5s linear;
+}
+.about-image img:hover{
+    transform:scale(1.2);
+    box-shadow: 1px 4px 30px 10px var(--color--white);
+}
+.about-content button{
+    width: 100px;
+    height: 40px;
+    background-color: var(--color--primary);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+
+
+/* EDUCATION SECTIONS STYLING */
+.education{
+    width: 100vw;
+    height: 100vh;
+}
+.edu-sec{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    font-size: 10px;
+    top: 20px;
+    /* background:var(--color--sandal); */
+    background: linear-gradient(to right,red,blue);
+    color: var(--color--black);
+    flex-wrap: wrap;
+}
+.college,.hsc,.sslc{
+    width: 400px;
+    height: 200px;
+    border: 2px solid white;
+    padding: 30px 35px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 10px 5px var(--color--black);
+    transition: all 0.2s linear;
+    
+}
+.edu-sec #eduhead{
+    position: absolute;
+    top: 2250px;
+    overflow: hidden;
+    font-size: 40px;
+}
+.edu-sec h3{
+    font-size: 20px;
+}
+.college:hover,.hsc:hover,.sslc:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px 5px var(--color--white);
+}
+
+/* CONTACT SECTION STYLING */
+
+.contact{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+
+}
+
+.title-con{
+    position: relative;
+    top: -40px;
+    right: 10px;
+    font-size: 20px;
+}
+.con-details{
+    border: 1px solid black;
+    padding: 50px;
+    background-color: var(--color--black);
+    color: var(--color--white);
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px 5px var(--color--primary);
+}
+.con-details label{
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#con-btn{
+    padding: 5px;
+    color: white;
+    background-color: var(--color--primary);
+    border: none;
+    border-radius:5px;
+    width: 100px;
+    height: 40px;
+    margin-top: 40px;
+}
